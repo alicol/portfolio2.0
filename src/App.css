@@ -2,37 +2,264 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Open+Sans:wght@300;400&display=swap');
+/* top divs */
+#top-div {
+  margin: 0;
   display: flex;
   flex-direction: column;
+
+}
+/* Color blocks */ 
+#first {
+  margin: 0;
+  background: linear-gradient(90deg, #e4d8cd 80%, #fffdf7 80%);
+ background-position: top right;
+ 
+}
+
+#second {
+  background: linear-gradient(90deg, #ffe1d2 35%, #ffccb6 35%);
+}
+
+#third {
+  background: linear-gradient(90deg, #fffdf7 19%, #e4d8cd 19%);
+
+}
+#fourth {
+  background: linear-gradient(90deg, #ffe1d2 55%, #ffccb6 55%);
+}
+
+/* design throughout */
+h3 {
+  font-family: 'Bodoni Moda', serif;
+  letter-spacing: .5vw;
+  font-size: 5vh;
+  color: #353538;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: .15vh;
+   line-height: 26px;
+   color: #353538;
+}
+input {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: .15vh;
+   line-height: 26px;
+   color: #353538;
+}
+textarea {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: .15vh;
+   line-height: 26px;
+   color: #353538;
+}
+h5 {
+  color: #353538;
+  letter-spacing: .5vh;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left !important;
+}
+#light-brown {
+  background-color: #e4d8cd;
+}
+#light-pink {
+  background-color: #ffe1d2;
+}
+.horizontal-line {
+  width: 100vw;
+  height: 10px;
+  margin-bottom: 55px;
+}
+#project-titles {
+  color: #353538;
+  letter-spacing: .5vh;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center !important;
+
+}
+a:link {
+  text-decoration: none !important;
+} 
+a {
+  color: #353538;
+}
+a:hover {
+  transform: scale(1.025);
+  cursor: pointer;
+}
+
+/* Design in first */
+#first-header {
+margin-left: auto;
+margin-right: auto;
+margin-top: 40px;
+margin-bottom: 40px;
+  color: #353538;
+  font-size: 8vw;
+  font-family: 'Bodoni Moda', serif;
+  letter-spacing: 1vw;
+  border: 10px solid #ffe1d2;
+  width: 90vw;
+  
+}
+#first-header-2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 5vh;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+#first-contact-button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  background-color: #ffccb6;
+  /* padding: 1.6vh 3.5vh; */
+  max-height: 40px;
+  font-size: 22px;
+  letter-spacing: .5vh;
+  border-radius: 3px;
+  color: #353538;
+  box-shadow: .5px 1px #353538;
+  border-color: #ffccb6;
+}
+#first-contact-button:hover {
+  transform: scale(1.025);
+  cursor: pointer;
+}
+#first-title {
+  color: #353538;
+  letter-spacing: .5vh;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+#first-header-3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 5vh;
+  
+}
+#headshot-sizing {
+ height: 40vh;
+ width: 47vh;
+  border-radius: 3px;
+  display: block;
+}
+#about-flexbox {
+margin-top: -30px;
+  display: flex;
+  flex-direction: column;
+  
+}
+#about-text {
+  margin-top: -20px;
+  width: 50vh;
+  max-width: 95vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Design in second */
+
+#skillset-flexbox {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+}
+#skillset-spacing {
+  width: 35vw;
+  text-align: center;
+  margin-left: 25px;
+}
+#list-of-skills-spacing {
+  margin-left: 25px;
+}
+
+/* Design for third */
+#button-flexbox {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.button-styling {
+  width: 300px;
+  height: 275px;
+  background-color: #ffe1d2;
+  border-color: #ffe1d2;
+  border-radius: 3px;
+  color: #353538;
+  box-shadow: .15px .2px #353538;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  
+}
+.button-styling:hover {
+  transform: scale(1.025);
+  cursor: pointer;
+}
+
+/* Design for fourth */
+#flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  align-items: stretch;
+  
+  
+}
+#form-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 30vh;
+  width: 50vw;
+  align-items: center;
+}
+#sendbutton {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  background-color: #ffccb6;
+  /* padding: 1.6vh 3.5vh; */
+  max-height: 40px;
+  font-size: 22px;
+  letter-spacing: .5vh;
+  border-radius: 3px;
+  color: #353538;
+  box-shadow: .5px 1px #353538;
+  border-color: #ffccb6;
+}
+
+#email {
+  width: 300px;
+  height: 5vh;
+  border-radius: 6px;
+}
+#message {
+  width: 300px;
+  height: 8vh;
+  border-radius: 6px;
+}
+#link-flexbox {
+  align-self: flex-end;
+  margin-left: 15px;
 }
